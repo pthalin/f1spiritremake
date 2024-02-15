@@ -1,3 +1,17 @@
+--- ABOUT ---
+
+IMPORTANAT: I did not make this it is an import from https://f1spirit.jorito.net/
+
+-- Changes
+- Fixed so it builds on Ubuntu 22.04
+
+-- Build on Ubuntu
+
+sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-sound1.2-sdl libsdl-mixer1.2-dev libsdl-net1.2-dev libcurl-dev
+make
+
+--- ORIGINAL README ---
+
 --  F-1 SPIRIT REMAKE  --
 
 1.- Introduction & Disclaimer
@@ -325,7 +339,7 @@ Version AC2:
 
 The BRAIN GAMES team:
 
-Programming: Santi "Popolon" Ontañón
+Programming: Santi "Popolon" Ontaï¿½ï¿½n
 Graphics: RamonMSX, Miikka "MP83" Poikela, Valerian, Olivier "Picili",
           Matriax
 Music/SFX: Jorrith "Jorito" Schaap 
