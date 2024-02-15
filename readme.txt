@@ -1,6 +1,6 @@
 --- ABOUT ---
 
-IMPORTANAT: I did not make this it is an import from https://f1spirit.jorito.net/
+IMPORTANT: I did not make this it is an import from https://f1spirit.jorito.net/
 
 -- Changes
 - Fixed so it builds on Ubuntu 22.04
