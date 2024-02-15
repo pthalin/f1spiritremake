@@ -5,8 +5,10 @@ IMPORTANT: I did not make this game. It is an import from https://f1spirit.jorit
 -- Changes
 - Fixed so it builds on Ubuntu 22.04
 
--- Build on Ubuntu
-sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-sound1.2-sdl libsdl-mixer1.2-dev libsdl-net1.2-dev libcurl-dev
+-- Build on Ubuntu/Rasbian
+sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-sound1.2-dev libsdl-mixer1.2-dev libsdl-net1.2-dev
+git clone https://github.com/pthalin/f1spiritremake.git
+cd f1spiritremake/
 make
 
 --- ORIGINAL README ---
