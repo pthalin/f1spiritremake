@@ -41,7 +41,7 @@ OBJS = \
 CC = gcc
 #CFLAGS = -g3 -O3 -Wall `sdl-config --cflags` `curl-config --cflags` -I/usr/X11R6/include
 CFLAGS = -g3 -O3 -Wno-write-strings `sdl-config --cflags` `curl-config --cflags` -I/usr/X11R6/include
-LDFLAGS = `sdl-config --libs` `curl-config --libs` -L/usr/X11R6/lib/ -lSDL_image -lSDL_mixer -lSDL_net -lGL -lGLU
+LDFLAGS = `sdl-config --libs` `curl-config --libs` -L/usr/X11R6/lib/ -lSDL -lSDL_image -lSDL_mixer -lSDL_net -lGL -lGLU -lm -lstdc++
 RM = rm -f
 CP = cp -r
 MD = mkdir -p
@@ -55,7 +55,7 @@ all: $(EXE)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(EXE): $(OBJS)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 	@$(STRIP) $@
 	@$(ECHO) " o If there are no errors, the game compiled succesfully"
 
